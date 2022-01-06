@@ -11,7 +11,6 @@
                  [org.postgresql/postgresql "42.2.14"]
                  [clj-http "3.10.0"]
                  [ovotech/ring-jwt "1.2.5"]]
-  :main ^:skip-aot cheffy.server
   :profiles {:uberjar {:aot :all}
              :dev {:source-paths ["dev/src"]
                    :resource-paths ["dev/resources"]

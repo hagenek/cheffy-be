@@ -1,0 +1,64 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: user.clj
+nil
+clj꞉user꞉> 
+; Execution error (NullPointerException) at user/eval10405 (form-init11579737727311686595.clj:19).
+; Cannot invoke "clojure.lang.IFn.invoke(Object)" because the return value of "clojure.lang.Var.getRawRoot()" is null
+clj꞉user꞉> 
+:initiated
+clj꞉user꞉> 
+:halted
+clj꞉user꞉> 
+:initiated
+clj꞉user꞉> 
+:reloading (cheffy.recipe.routes cheffy.router cheffy.server cheffy.core-test user)
+
+Configured db
+
+Started app
+
+Server running on port 3000
+:resumed
+clj꞉user꞉> 
+#function[integrant.repl/reset]
+clj꞉user꞉> 
+#function[integrant.repl/go]
+clj꞉user꞉> 
+
+Configured db
+
+Started app
+
+Server running on port 3000
+:initiated
+clj꞉user꞉> 
+:halted
+clj꞉user꞉> 
+:reloading ()
+
+Configured db
+
+Started app
+
+Server running on port 3000
+:resumed
+clj꞉user꞉> 
