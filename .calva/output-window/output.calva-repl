@@ -5,7 +5,7 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.8.3"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.26.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +dev repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS: 
@@ -18,47 +18,71 @@
 clj꞉user꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉user꞉> 
+; Execution error (ClassCastException) at next.jdbc.sql/update! (sql.clj:143).
+; class java.lang.Character cannot be cast to class java.util.Map$Entry (java.lang.Character and java.util.Map$Entry are in module java.base of loader 'bootstrap')
+clj꞉user꞉> 
+{:recipe-id "a3dd84c-4a33-45aa-b0f3-4bf9ac997680"}
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+{:recipe-id "a3dd84c-4a33-45aa-b0f3-4bf9ac997680"}
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+:reloading (cheffy.recipe.db cheffy.responses cheffy.recipe.handlers cheffy.recipe.routes cheffy.router cheffy.server cheffy.core-test user)
+
+Configured db
+
+Started app
+
+Server running on port 3000
+:resumed
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
+nil
+clj꞉user꞉> 
+; Execution error (IllegalArgumentException) at next.jdbc.protocols/eval4236$fn$G (protocols.clj:33).
+; No implementation of method: :-execute-one of protocol: #'next.jdbc.protocols/Executable found for class: nil
+clj꞉user꞉> 
 ; Evaluating file: user.clj
 nil
 clj꞉user꞉> 
-; Execution error (NullPointerException) at user/eval10405 (form-init11579737727311686595.clj:19).
-; Cannot invoke "clojure.lang.IFn.invoke(Object)" because the return value of "clojure.lang.Var.getRawRoot()" is null
+#:next.jdbc{:update-count 0}
 clj꞉user꞉> 
-:initiated
+#:next.jdbc{:update-count 0}
 clj꞉user꞉> 
-:halted
+; Evaluating file: user.clj
+nil
 clj꞉user꞉> 
-:initiated
+#:next.jdbc{:update-count 0}
 clj꞉user꞉> 
-:reloading (cheffy.recipe.routes cheffy.router cheffy.server cheffy.core-test user)
+#:next.jdbc{:update-count 0}
+clj꞉user꞉> 
+#:next.jdbc{:update-count 1}
+clj꞉user꞉> 
+#:next.jdbc{:update-count 1}
+clj꞉user꞉> 
+nil
+clj꞉cheffy.test-system꞉> 
+nil
+clj꞉cheffy.test-system꞉> 
+; Evaluating file: test_system.clj
+; Syntax error reading source at (test/cheffy/test_system.clj:22:2).
+; Unmatched delimiter: )
+; Evaluation of file test_system.clj failed: class clojure.lang.Compiler$CompilerException
 
-Configured db
-
-Started app
-
-Server running on port 3000
-:resumed
-clj꞉user꞉> 
-#function[integrant.repl/reset]
-clj꞉user꞉> 
-#function[integrant.repl/go]
-clj꞉user꞉> 
-
-Configured db
-
-Started app
-
-Server running on port 3000
-:initiated
-clj꞉user꞉> 
-:halted
-clj꞉user꞉> 
-:reloading ()
-
-Configured db
-
-Started app
-
-Server running on port 3000
-:resumed
-clj꞉user꞉> 
+clj꞉cheffy.test-system꞉> 
+clj꞉cheffy.test-system꞉> 
